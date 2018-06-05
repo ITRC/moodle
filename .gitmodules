@@ -16,3 +16,6 @@
 [submodule "mod/zoom"]
 	path = mod/zoom
 	url = https://github.com/ucla/moodle-mod_zoom.git
+[submodule "local/adminer"]
+	path = local/adminer
+	url = https://github.com/grabs/moodle-local_adminer
