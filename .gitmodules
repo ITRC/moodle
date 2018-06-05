@@ -4,3 +4,6 @@
 [submodule "blocks/attendance"]
 	path = blocks/attendance
 	url = https://github.com/danmarsden/moodle-block_attendance
+[submodule "lib/editor/atto/plugins/morefontcolors"]
+	path = lib/editor/atto/plugins/morefontcolors
+	url = https://github.com/ndunand/moodle-atto_morefontcolors.git
