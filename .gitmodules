@@ -10,3 +10,6 @@
 [submodule "blocks/completion_progress"]
 	path = blocks/completion_progress
 	url = https://github.com/deraadt/moodle-block_completion_progress.git
+[submodule "report/editdates"]
+	path = report/editdates
+	url = https://github.com/moodleou/moodle-report_editdates.git
