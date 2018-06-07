@@ -19,3 +19,6 @@
 [submodule "local/adminer"]
 	path = local/adminer
 	url = https://github.com/grabs/moodle-local_adminer
+[submodule "blocks/quickmail"]
+	path = blocks/quickmail
+	url = https://github.com/ITRC/moodle-block_quickmail.git
