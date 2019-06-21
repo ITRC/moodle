@@ -311,7 +311,8 @@ class core_backup_renderer extends plugin_renderer_base {
             $html .= $this->output->heading(get_string('restoretocurrentcourse', 'backup'), 2, array('class' => 'header'));
             $html .= $this->backup_detail_input(get_string('restoretocurrentcourseadding', 'backup'), 'radio', 'target',
                 backup::TARGET_CURRENT_ADDING, array('checked' => 'checked'));
-            $html .= $this->backup_detail_input(get_string('restoretocurrentcoursedeleting', 'backup'), 'radio', 'target',
+            // ISU - Temporary workaround for MDL-26222, don't let users delete a course when restoring.
+            //$html .= $this->backup_detail_input(get_string('restoretocurrentcoursedeleting', 'backup'), 'radio', 'target',
                 backup::TARGET_CURRENT_DELETING);
             $attrs = array('type' => 'submit', 'value' => get_string('continue'), 'class' => 'btn btn-primary');
             $html .= $this->backup_detail_pair('', html_writer::empty_tag('input', $attrs));
@@ -333,7 +334,8 @@ class core_backup_renderer extends plugin_renderer_base {
             if ($wholecourse) {
                 $html .= $this->backup_detail_input(get_string('restoretoexistingcourseadding', 'backup'), 'radio', 'target',
                     backup::TARGET_EXISTING_ADDING, array('checked' => 'checked'));
-                $html .= $this->backup_detail_input(get_string('restoretoexistingcoursedeleting', 'backup'), 'radio', 'target',
+                // ISU - Temporary workaround for MDL-26222, don't let users delete a course when restoring.
+                //$html .= $this->backup_detail_input(get_string('restoretoexistingcoursedeleting', 'backup'), 'radio', 'target',
                     backup::TARGET_EXISTING_DELETING);
             } else {
                 $html .= html_writer::empty_tag('input', array('type' => 'hidden', 'name' => 'target', 'value' => backup::TARGET_EXISTING_ADDING));
